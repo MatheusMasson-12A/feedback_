@@ -44,27 +44,6 @@ body {
     margin-bottom: 24px;
 }
 
-.botoes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.botoes button {
-    width: 51px;
-    height: 51px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    border-radius: 50%;
-    border: nome;
-    color: var(--medium-grey);
-    background-color: var(--dark-blue);
-}
-
-.botoes button:hover {
-    
-}
-
 .estrela {
     background-color: var(--dark-blue);
     width: 48px;
@@ -77,4 +56,58 @@ body {
     border-radius: 50%;
 
     margin-bottom: 30px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.botoes button {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 50%;
+    border: none;
+    color: var(--medium-grey);
+    background-color: var(--dark-blue);
+
+    transition: all ease-in-out 0.3s;
+}
+
+.botoes button:hover {
+    color: var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.botoes button:focus {
+    color: var(--white);
+    background-color: var(--light-grey);
+}
+
+.Card > button {
+    width: 100%;
+    padding: 13px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 22px;
+
+
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+
+    transition: all ease-in-out 0.3s;
+}
+
+.Card > button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
 }
